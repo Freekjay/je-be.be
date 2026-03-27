@@ -7,10 +7,20 @@
   <meta name="description" content="JEBE Consultancy - IT consulting and data solutions based in Hasselt, Belgium. We help businesses make smarter decisions through technology.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">JEBE<span>.</span></div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- Header -->
   <header>
@@ -25,35 +35,40 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Technology is complex. <em>We make it work for you.</em></h1>
-      <p>JEBE Consultancy helps businesses navigate the digital landscape with hands-on IT consulting, data expertise, and pragmatic solutions.</p>
-      <a href="#contact" class="btn btn-primary">Get in touch</a>
+  <section class="hero" id="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="container hero-container">
+      <p class="hero-label reveal">JEBE Consultancy</p>
+      <h1 class="reveal reveal-delay-1">Technology is complex.<br><em>We make it work for you.</em></h1>
+      <p class="hero-sub reveal reveal-delay-2">Hands-on IT consulting, data expertise, and pragmatic solutions for businesses navigating the digital landscape.</p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#contact" class="btn btn-primary btn-glow">Get in touch</a>
+        <a href="#services" class="btn btn-outline">Our services</a>
+      </div>
     </div>
   </section>
 
   <!-- About -->
   <section id="about" class="section about">
     <div class="container">
-      <p class="section-label">About</p>
-      <h2 class="section-title">Pragmatic consulting, real results</h2>
-      <p>JEBE Consultancy is an IT consulting firm founded by Jeroen Beunckens and based in Hasselt, Belgium. We partner with organizations to solve real problems — from data strategy and system architecture to hands-on implementation.</p>
-      <p>No fluff, no slide decks that gather dust. We roll up our sleeves and deliver solutions that work in practice, not just on paper.</p>
+      <p class="section-label reveal">About</p>
+      <h2 class="section-title reveal">Pragmatic consulting, real results</h2>
+      <p class="reveal">JEBE Consultancy is an IT consulting firm founded by Jeroen Beunckens and based in Hasselt, Belgium. We partner with organizations to solve real problems — from data strategy and system architecture to hands-on implementation.</p>
+      <p class="reveal">No fluff, no slide decks that gather dust. We roll up our sleeves and deliver solutions that work in practice, not just on paper.</p>
       <div class="about-details">
-        <div class="about-detail">
+        <div class="about-detail reveal">
           <span class="label">Founded</span>
           <span class="value">2025</span>
         </div>
-        <div class="about-detail">
+        <div class="about-detail reveal reveal-delay-1">
           <span class="label">Based in</span>
           <span class="value">Hasselt, Belgium</span>
         </div>
-        <div class="about-detail">
+        <div class="about-detail reveal reveal-delay-2">
           <span class="label">VAT</span>
           <span class="value">BE 1023.622.687</span>
         </div>
-        <div class="about-detail">
+        <div class="about-detail reveal reveal-delay-3">
           <span class="label">Founder</span>
           <span class="value">Jeroen Beunckens</span>
         </div>
@@ -64,11 +79,11 @@
   <!-- Services -->
   <section id="services" class="section">
     <div class="container">
-      <p class="section-label">Services</p>
-      <h2 class="section-title">What we do</h2>
+      <p class="section-label reveal">Services</p>
+      <h2 class="section-title reveal">What we do</h2>
       <div class="services-grid">
 
-        <div class="service-card">
+        <div class="service-card reveal">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
@@ -76,7 +91,7 @@
           <p>Strategic guidance on technology choices, system architecture, and digital transformation tailored to your business needs.</p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal reveal-delay-1">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
           </div>
@@ -84,7 +99,7 @@
           <p>From data engineering and pipeline design to analytics and reporting — we help you turn raw data into actionable insights.</p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal reveal-delay-2">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
@@ -99,10 +114,10 @@
   <!-- CTA / Contact -->
   <section id="contact" class="section cta">
     <div class="container">
-      <p class="section-label">Contact</p>
-      <h2 class="section-title">Ready to get started?</h2>
-      <p>Let's talk about how we can help your business move forward.</p>
-      <a href="mailto:jeroen@je-be.be" class="btn btn-primary">jeroen@je-be.be</a>
+      <p class="section-label reveal">Contact</p>
+      <h2 class="section-title reveal">Ready to get started?</h2>
+      <p class="reveal">Let's talk about how we can help your business move forward.</p>
+      <a href="mailto:jeroen@je-be.be" class="btn btn-primary btn-glow reveal reveal-delay-1">jeroen@je-be.be</a>
     </div>
   </section>
 
@@ -115,6 +130,81 @@
       </div>
     </div>
   </footer>
+
+  <!-- Vanta.js for animated hero background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
+  <script>
+    // ── Loading Screen ──
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('loader-hidden');
+        document.body.classList.add('loaded');
+      }, 1200);
+      loader.addEventListener('transitionend', () => {
+        if (loader.classList.contains('loader-hidden')) {
+          loader.style.display = 'none';
+        }
+      });
+    });
+
+    // ── Vanta.js animated background ──
+    if (window.VANTA) {
+      VANTA.WAVES({
+        el: "#hero-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x0f1b2d,
+        shininess: 35.00,
+        waveHeight: 15.00,
+        waveSpeed: 0.75,
+        zoom: 0.85,
+      });
+    }
+
+    // ── Scroll Reveal Animations ──
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ── Parallax on hero (subtle) ──
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero .container');
+      const scrolled = window.pageYOffset;
+      if (scrolled < 800) {
+        hero.style.transform = `translateY(${scrolled * 0.15}px)`;
+        hero.style.opacity = 1 - (scrolled * 0.0015);
+      }
+    });
+
+    // ── Header background intensifies on scroll ──
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    });
+  </script>
 
 </body>
 </html>
