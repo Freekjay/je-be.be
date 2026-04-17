@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitchup Support</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1c1917;
+      line-height: 1.6;
+      padding: 32px 20px;
+      background-color: #ffffff;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #059669;
+      font-size: 28px;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      color: #78716c;
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: #44403c;
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+    p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    a {
+      color: #059669;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-btn {
+      display: inline-block;
+      background-color: #059669;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 4px;
+      margin-bottom: 12px;
+      transition: background-color 0.2s;
+    }
+    .contact-btn:hover {
+      background-color: #047857;
+      text-decoration: none;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e7e5e4;
+      padding: 16px 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-question {
+      font-weight: 600;
+      font-size: 16px;
+      color: #1c1917;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 20px;
+      color: #78716c;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-question::after {
+      content: '\2212';
+    }
+    .faq-answer {
+      display: none;
+      margin-top: 8px;
+      font-size: 16px;
+      color: #44403c;
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+    .links {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #e7e5e4;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kitchup Support</h1>
+    <p class="subtitle">We're here to help. Find answers below or get in touch.</p>
+
+    <h2>Contact Us</h2>
+    <p>Having an issue or want to share feedback? Send us an email and we'll get back to you as soon as possible.</p>
+    <a href="mailto:support@kitchup.app?subject=Kitchup%20Support%20Request" class="contact-btn">Email support@kitchup.app</a>
+    <p>Please include a description of the issue, what you expected to happen, and any relevant screenshots. This helps us resolve things faster.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I delete my account?</div>
+      <div class="faq-answer">Go to the Profile screen in the app and tap "Delete Account". This will permanently remove all your personal data, recipes, and household information.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I manage or cancel my subscription?</div>
+      <div class="faq-answer">Subscriptions are managed through your device's app store. On iPhone, go to Settings &gt; your name &gt; Subscriptions. On Android, open the Play Store &gt; Menu &gt; Subscriptions. From there you can change or cancel your plan.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">I'm not receiving the sign-in code</div>
+      <div class="faq-answer">Check your spam or junk folder. If the email still doesn't arrive, make sure you're entering the correct email address and try again after a few minutes. If the problem persists, contact us at <a href="mailto:support@kitchup.app">support@kitchup.app</a>.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I share recipes with my household?</div>
+      <div class="faq-answer">Yes. Once you're part of a household, all members can view and edit shared recipes, meal plans, and shopping lists.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I request a copy of my data?</div>
+      <div class="faq-answer">Send an email to <a href="mailto:privacy@kitchup.app">privacy@kitchup.app</a> and we'll provide an export of your personal data in accordance with GDPR.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">I found a bug or something isn't working</div>
+      <div class="faq-answer">Please email <a href="mailto:support@kitchup.app">support@kitchup.app</a> with a description of what happened, what you expected, and your device model and OS version. Screenshots are very helpful.</div>
+    </div>
+
+    <div class="links">
+      <a href="https://je-be.be/kitchup/privacy">Privacy Policy</a>
+      <a href="https://je-be.be/kitchup/terms">Terms &amp; Conditions</a>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function (q) {
+      q.addEventListener('click', function () {
+        this.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
