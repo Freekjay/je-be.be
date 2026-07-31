@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /branding/
+Disallow: /docs/
+
+Sitemap: https://www.je-be.be/sitemap.xml
