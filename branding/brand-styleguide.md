@@ -6,7 +6,7 @@ Dit is de opvolger van de vorige (donkere) styleguide.
 De stijl is licht en nuchter: warm papier als canvas, dennengroen als stem, honinggeel als blikvanger.
 Ontworpen tijdens werf 2 van het [uitrolplan](../plans/2026-07-07-uitrolplan.md), op basis van de positionering in het [design-document](../specs/2026-07-06-jebe-kmo-positionering-design.md).
 
-Typeface: **Space Grotesk** (Google Fonts) · Site: **je-be.be** · Tagline: **"Data- en AI-oplossingen van Limburgse makelij"**
+Typeface: **Space Grotesk** (Google Fonts) · Site: **je-be.be** · Tagline: **"Data & AI oplossingen van Limburgse makelij"**
 
 ---
 
@@ -252,4 +252,4 @@ Bestanden: `assets/favicon.svg` (bron) plus PNG's op 16, 32, 180 en 512 pixels; 
 ---
 
 *JEBE Consultancy · Jeroen Beunckens · Hasselt · je-be.be*
-*Data- en AI-oplossingen van Limburgse makelij.*
+*Data & AI oplossingen van Limburgse makelij.*

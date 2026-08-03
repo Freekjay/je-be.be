@@ -70,7 +70,7 @@ def build():
     foot_font = instantiated_font(500, 24)
 
     y = MARGIN + logo_h + 56
-    for line in ["Data- en AI-oplossingen", "van Limburgse makelij"]:
+    for line in ["Data & AI oplossingen", "van Limburgse makelij"]:
         draw.text((MARGIN, y), line, font=tagline_font, fill=PAPER)
         y += 64
 
